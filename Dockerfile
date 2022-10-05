@@ -14,6 +14,8 @@ RUN apt update && \
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
 
+RUN apt-get -y install python3-pip
+
 ADD . /app/
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
