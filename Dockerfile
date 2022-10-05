@@ -16,6 +16,6 @@ RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
 
 ADD . /app/
 COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 RUN chmod +x /app/start_services.sh
 CMD /app/start_services.sh
