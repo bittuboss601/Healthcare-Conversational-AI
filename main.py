@@ -1,7 +1,7 @@
 import requests
-url = 'https://chatbotbittu.herokuapp.com/webhooks/rest/webhook' ##change rasablog with your app name
+url = 'https://bittuchatbot.herokuapp.com/webhooks/rest/webhook' ##change rasablog with your app name
 myobj = {
-"message": "hi",
+"message": "Hey",
 "sender": 1,
 }
 x = requests.post(url, json = myobj)
